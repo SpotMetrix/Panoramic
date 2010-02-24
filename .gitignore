@@ -1,0 +1,12 @@
+build
+*.xcodeproj/*.mode1v3
+*.xcodeproj/*.mode2v3
+*.xcodeproj/*.pbxuser
+*.xcodeproj/*.perspectivev3
+*.xcodeproj/project.pbxproj
+*.swp
+*~.nib
+.DS_Store
+
+*/errorLogFromLastBuild.txt
+SM3DAR_keys.txt
