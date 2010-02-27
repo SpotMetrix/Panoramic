@@ -3,7 +3,6 @@ build
 *.xcodeproj/*.mode2v3
 *.xcodeproj/*.pbxuser
 *.xcodeproj/*.perspectivev3
-*.xcodeproj/project.pbxproj
 *.swp
 *~.nib
 .DS_Store

@@ -1,0 +1,10 @@
+
+Panoramic Image Browser
+
+* load image
+* add points for other photos
+* tap point to load other photo
+** use point's url as a key for the associated panoramic image
+** change user's location to point's location
+
+
