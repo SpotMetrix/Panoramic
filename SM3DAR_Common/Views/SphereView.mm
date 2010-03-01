@@ -20,6 +20,9 @@
   if (texture == nil && [textureName length] > 0) {
     NSLog(@"Loading texture named %@", textureName);
     self.textureImage = [UIImage imageNamed:textureName];
+    
+    // TODO: flip horizontal
+    
     self.texture = [[Texture newTextureFromImage:textureImage.CGImage] autorelease];
   }
   
@@ -31,8 +34,8 @@
 }
 
 - (void) displayGeometry {
-  CGFloat scalar = 500.0f;
-  glScalef (scalar, scalar, scalar);
+  CGFloat scalar = 100.0f;
+  glScalef (-scalar, scalar, scalar);
   glRotatef (180, 1, 0, 0);
   
   //[self updateTexture];
