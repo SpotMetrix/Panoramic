@@ -91,7 +91,7 @@
 		4D7350E711349FC800331FE3 /* cube.pano.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7350E611349FC800331FE3 /* cube.pano.png */; };
 		4D7350F21134A00500331FE3 /* CubeView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D7350F11134A00500331FE3 /* CubeView.mm */; };
 		4D7350F51134BC6D00331FE3 /* TexturedGeometryView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D7350F41134BC6D00331FE3 /* TexturedGeometryView.mm */; };
-		4D9BD7271130CC730088E380 /* SM3DARLibary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9BD7261130CC730088E380 /* SM3DARLibary.a */; };
+		4DCE4997113EDC0600D3FA09 /* SM3DARLibary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCE4996113EDC0600D3FA09 /* SM3DARLibary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -254,7 +254,7 @@
 		4D7350F11134A00500331FE3 /* CubeView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CubeView.mm; sourceTree = "<group>"; };
 		4D7350F31134BC6D00331FE3 /* TexturedGeometryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TexturedGeometryView.h; sourceTree = "<group>"; };
 		4D7350F41134BC6D00331FE3 /* TexturedGeometryView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TexturedGeometryView.mm; sourceTree = "<group>"; };
-		4D9BD7261130CC730088E380 /* SM3DARLibary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = SM3DARLibary.a; path = "../../SM3DARLibrary/SM3DARLibary/build/Debug-iphoneos/SM3DARLibary.a"; sourceTree = SOURCE_ROOT; };
+		4DCE4996113EDC0600D3FA09 /* SM3DARLibary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = SM3DARLibary.a; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Panoramic-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Panoramic-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -271,7 +271,7 @@
 				4D59E67C1130B33C00AD04A7 /* QuartzCore.framework in Frameworks */,
 				4D59E68A1130B3C400AD04A7 /* MapKit.framework in Frameworks */,
 				4D59E7D11130BC2500AD04A7 /* libGHUnitIPhone2_1.a in Frameworks */,
-				4D9BD7271130CC730088E380 /* SM3DARLibary.a in Frameworks */,
+				4DCE4997113EDC0600D3FA09 /* SM3DARLibary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +418,7 @@
 		4D59E6591130B28B00AD04A7 /* SM3DAR */ = {
 			isa = PBXGroup;
 			children = (
-				4D9BD7261130CC730088E380 /* SM3DARLibary.a */,
+				4DCE4996113EDC0600D3FA09 /* SM3DARLibary.a */,
 				4D59E6CE1130B43400AD04A7 /* SM3DAR_keys.txt */,
 				4D59E6CF1130B43400AD04A7 /* bubble1.png */,
 				4D59E6D01130B43400AD04A7 /* compass_rose.png */,
@@ -828,6 +828,7 @@
 					"\"$(SRCROOT)/SM3DAR\"",
 					"\"$(SRCROOT)/SM3DAR_Common/Lib/HTTPRiot/httpriot-0.6.6/Vendor/gh-unit-iphone\"",
 					"\"$(SRCROOT)/../../SM3DARLibrary/SM3DARLibary/build/Debug-iphoneos\"",
+					"\"$(SRCROOT)/SM3DAR_Common/Data\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -851,6 +852,7 @@
 					"\"$(SRCROOT)/SM3DAR\"",
 					"\"$(SRCROOT)/SM3DAR_Common/Lib/HTTPRiot/httpriot-0.6.6/Vendor/gh-unit-iphone\"",
 					"\"$(SRCROOT)/../../SM3DARLibrary/SM3DARLibary/build/Debug-iphoneos\"",
+					"\"$(SRCROOT)/SM3DAR_Common/Data\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",

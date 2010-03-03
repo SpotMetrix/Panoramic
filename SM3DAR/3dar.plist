@@ -10,5 +10,7 @@
 	<false/>
 	<key>3darShowStatusBar</key>
 	<true/>
+	<key>3darLookMode</key>
+	<string>free</string>
 </dict>
 </plist>
