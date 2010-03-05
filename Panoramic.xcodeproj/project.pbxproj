@@ -92,6 +92,9 @@
 		4D7350F21134A00500331FE3 /* CubeView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D7350F11134A00500331FE3 /* CubeView.mm */; };
 		4D7350F51134BC6D00331FE3 /* TexturedGeometryView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D7350F41134BC6D00331FE3 /* TexturedGeometryView.mm */; };
 		4DCE4997113EDC0600D3FA09 /* SM3DARLibary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCE4996113EDC0600D3FA09 /* SM3DARLibary.a */; };
+		4DF508261141926100F55C3F /* sphere.test.pano.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DF508251141926100F55C3F /* sphere.test.pano.png */; };
+		4DF5082B1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DF5082A1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png */; };
+		4DF5082D114193C200F55C3F /* sphere.timezones.pano.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DF5082C114193C200F55C3F /* sphere.timezones.pano.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -255,6 +258,9 @@
 		4D7350F31134BC6D00331FE3 /* TexturedGeometryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TexturedGeometryView.h; sourceTree = "<group>"; };
 		4D7350F41134BC6D00331FE3 /* TexturedGeometryView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TexturedGeometryView.mm; sourceTree = "<group>"; };
 		4DCE4996113EDC0600D3FA09 /* SM3DARLibary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = SM3DARLibary.a; sourceTree = "<group>"; };
+		4DF508251141926100F55C3F /* sphere.test.pano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sphere.test.pano.png; sourceTree = "<group>"; };
+		4DF5082A1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sphere.schauspielhaus_hamburg.pano.png; sourceTree = "<group>"; };
+		4DF5082C114193C200F55C3F /* sphere.timezones.pano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sphere.timezones.pano.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Panoramic-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Panoramic-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -347,6 +353,9 @@
 			isa = PBXGroup;
 			children = (
 				4D7350E411349C0A00331FE3 /* sphere.pano.png */,
+				4DF5082C114193C200F55C3F /* sphere.timezones.pano.png */,
+				4DF5082A1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png */,
+				4DF508251141926100F55C3F /* sphere.test.pano.png */,
 				4D7350E611349FC800331FE3 /* cube.pano.png */,
 				4D362E3D1132F3B800B4724A /* DPad_BG.png */,
 				4D362E3E1132F3B800B4724A /* 64_white.png */,
@@ -746,6 +755,9 @@
 				4D362F87113314D700B4724A /* 84_white.png in Resources */,
 				4D7350E511349C0A00331FE3 /* sphere.pano.png in Resources */,
 				4D7350E711349FC800331FE3 /* cube.pano.png in Resources */,
+				4DF508261141926100F55C3F /* sphere.test.pano.png in Resources */,
+				4DF5082B1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png in Resources */,
+				4DF5082D114193C200F55C3F /* sphere.timezones.pano.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
