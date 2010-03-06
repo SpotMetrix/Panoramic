@@ -1,6 +1,5 @@
 //
 //  YahooLocalSearch.m
-//  SM3DARViewer
 //
 //  Created by P. Mark Anderson on 12/18/09.
 //  Copyright 2009 Spot Metrix. All rights reserved.
@@ -10,13 +9,16 @@
 #import "NSArray+BSJSONAdditions.h"
 #import "NSString+BSJSONAdditions.h"
 #import "UIApplication_TLCommon.h"
+#import "SM3DAR.h"
 
 @implementation YahooLocalSearch
-@synthesize sm3dar, webData, query;
+@synthesize webData, query;
 
 - (void)execute:(NSString*)searchQuery {
+  SM3DAR_Controller *sm3dar = [SM3DAR_Controller sharedSM3DAR_Controller];
+
   self.query = searchQuery;
-	CLLocation *loc = [self.sm3dar currentLocation];
+	CLLocation *loc = [sm3dar currentLocation];
   NSLog(@"Executing search for '%@' at current location: %@", searchQuery, loc);
   
 	NSString *yahooMapUri = @"http://local.yahooapis.com/LocalSearchService/V3/localSearch?appid=YahooDemo&query=%@&latitude=%3.5f&longitude=%3.5f&results=20&output=json";
@@ -70,6 +72,10 @@
 							[marker objectForKey:@"Latitude"], @"latitude",
 							[marker objectForKey:@"Longitude"], @"longitude",
 							self.query, @"search",
+
+              // you can set the marker's view class right here
+              //@"BubbleMarkerView", @"view_class_name",
+
 							nil];
     
     merged = [NSMutableDictionary dictionaryWithDictionary:marker];
@@ -82,28 +88,28 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
   [[UIApplication sharedApplication] didStopNetworkRequest];
-	NSLog(@"Received bytes: %d", [self.webData length]);
+	//NSLog(@"Received %d bytes", [self.webData length]);
 	NSString *response = [[NSString alloc] initWithData:self.webData encoding:NSASCIIStringEncoding];
 	//NSLog(@"RESPONSE:\n\n%@", response);	
 	
 	// convert response json into a collection of markers
 	NSArray *markers = [self parseYahooMapSearchResults:response];
+
+  SM3DAR_Controller *sm3dar = [SM3DAR_Controller sharedSM3DAR_Controller];
 	
 	NSLog(@"Adding %i POIs", [markers count]);
   NSMutableArray *points = [NSMutableArray arrayWithCapacity:[markers count]];
 	if (markers && [markers count] > 0) {
     for (NSDictionary *row in markers) {
-      [points addObject:[self.sm3dar initPointOfInterest:row]];
+      [points addObject:[sm3dar initPointOfInterest:row]];
     }
       
-    [self.sm3dar addPointsOfInterest:points];
-//		[self.sm3dar loadMarkersFromJSON:[markers jsonStringValue]];
+    [sm3dar addPointsOfInterest:points];
 	}
 }
 
 - (void)dealloc {
   [webData release];
-	[sm3dar release];
   [query release];
 	[super dealloc];
 }

@@ -3,7 +3,7 @@
 //  Panoramic
 //
 //  Created by P. Mark Anderson on 2/21/10.
-//  Copyright 2010 Bordertown Labs, LLC. All rights reserved.
+//  Copyright 2010 Spot Metrix, Inc. All rights reserved.
 //
 
 #define SJ_PI 3.14159265359f

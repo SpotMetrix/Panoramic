@@ -3,7 +3,7 @@
 //  Panoramic
 //
 //  Created by P. Mark Anderson on 2/21/10.
-//  Copyright 2010 Bordertown Labs, LLC. All rights reserved.
+//  Copyright 2010 Spot Metrix, Inc. All rights reserved.
 //
 
 #import "RoundedLabelMarkerView.h"
@@ -15,7 +15,7 @@
 - (void) buildView {
   NSInteger fontSize = 18;
   UILabel *label = [[UILabel alloc] init];
-  label.text = poi.title;
+  label.text = self.poi.title;
   label.font = [UIFont boldSystemFontOfSize:fontSize];
   label.textColor = [UIColor whiteColor];
   label.backgroundColor = [UIColor blackColor];

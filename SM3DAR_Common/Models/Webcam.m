@@ -3,7 +3,7 @@
 //  NearbyWebcams
 //
 //  Created by P. Mark Anderson on 1/22/10.
-//  Copyright 2010 Bordertown Labs, LLC. All rights reserved.
+//  Copyright 2010 Spot Metrix, Inc. All rights reserved.
 //
 
 #import "Webcam.h"

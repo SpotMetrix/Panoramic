@@ -42,6 +42,7 @@ typedef NSObject<SM3DAR_PointProtocol> SM3DAR_Point;
 -(void)didChangeFocusToPOI:(SM3DAR_Point*)newPOI fromPOI:(SM3DAR_Point*)oldPOI;
 -(void)didChangeSelectionToPOI:(SM3DAR_Point*)newPOI fromPOI:(SM3DAR_Point*)oldPOI;
 -(void)didChangeOrientationYaw:(CGFloat)yaw pitch:(CGFloat)pitch roll:(CGFloat)roll;
+-(void)logoWasTapped;
 @end
 
 @interface SM3DAR_Controller : UIViewController <UIAccelerometerDelegate, CLLocationManagerDelegate, MKMapViewDelegate> {
@@ -80,6 +81,7 @@ typedef NSObject<SM3DAR_PointProtocol> SM3DAR_Point;
 
 - (BOOL)displayPoint:(SM3DAR_Point*)poi;
 - (CLLocation*)currentLocation;
+- (void)startCameraWithController:(UIViewController*)parent;
 - (void)startCamera;
 - (void)stopCamera;
 - (void)suspend;
@@ -165,10 +167,10 @@ typedef NSObject<SM3DAR_PointProtocol> SM3DAR_Point;
 @end
 
 @interface SM3DAR_MarkerView : SM3DAR_PointView {
-	SM3DAR_PointOfInterest *poi;
 }
 @property (nonatomic, retain) SM3DAR_PointOfInterest *poi;
 - (id)initWithPointOfInterest:(SM3DAR_PointOfInterest*)pointOfInterest;
+- (CGFloat)rangeScalar;
 @end
 
 @interface SM3DAR_IconMarkerView : SM3DAR_MarkerView {
