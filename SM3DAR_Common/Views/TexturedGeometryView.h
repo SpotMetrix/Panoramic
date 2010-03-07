@@ -32,6 +32,7 @@
 
 - (id) initWithTextureNamed:(NSString*)name;
 - (id) initWithTextureURL:(NSURL*)url;
+- (void) setTextureWithImageNamed:(NSString*)imgName;
 - (void) drawInGLContext;
 - (void) updateTexture;
 - (void) updateImage:(UIImage*)newImage;

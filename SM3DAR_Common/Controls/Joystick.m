@@ -6,10 +6,10 @@
 //  Copyright 2010 Spot Metrix, Inc. All rights reserved.
 //
 
-#define SJ_PI 3.14159265359f
-#define SJ_PI_X_2 6.28318530718f
-#define SJ_RAD2DEG 180.0f/SJ_PI
-#define SJ_DEG2RAD SJ_PI/180.0f
+#define DS_PI 3.14159265359f
+#define DS_PI_X_2 6.28318530718f
+#define DS_RAD2DEG 180.0f/DS_PI
+#define DS_DEG2RAD DS_PI/180.0f
 
 #define THUMB_HIDE_DELAY 3.0f
 
@@ -77,14 +77,14 @@ deadRadius;
   
 	float angle = atan2f(dy, dx); // in radians
 	if (angle < 0){
-		angle	+= SJ_PI_X_2;
+		angle	+= DS_PI_X_2;
 	}
   
 	float cosAngle;
 	float sinAngle;
   
 	if (isDPad) {
-		float anglePerSector = 360.0f / numberOfDirections * SJ_DEG2RAD;
+		float anglePerSector = 360.0f / numberOfDirections * DS_DEG2RAD;
 		angle = roundf(angle/anglePerSector) * anglePerSector;
 	}
   
@@ -98,7 +98,7 @@ deadRadius;
 	}
   
 	velocity = CGPointMake(dx/joystickRadius, dy/joystickRadius);
-	degrees = angle * SJ_RAD2DEG;
+	degrees = angle * DS_RAD2DEG;
   
 	// Update the thumb's position
   CGFloat w = self.bounds.size.width /2;

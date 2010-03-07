@@ -11,4 +11,6 @@
 @interface SphereView : TexturedGeometryView {
 }
 
+- (void) loadWireframe;
+
 @end

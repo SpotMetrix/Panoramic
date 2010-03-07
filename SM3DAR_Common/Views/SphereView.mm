@@ -10,22 +10,28 @@
 
 @implementation SphereView
 
+- (void) loadWireframe {
+  NSLog(@"Loading geometry in sphere.obj");
+  NSString* path = [[NSBundle mainBundle] pathForResource:@"sphere" ofType:@"obj"];
+  self.geometry = [[Geometry newOBJFromResource:path] autorelease];
+  geometry.cullFace = NO;
+  self.textureImage = nil;
+}
+
 - (void) buildView {
   self.hidden = NO;
   
   self.zrot = 0.0;
   
 	self.frame = CGRectZero;
-  
+
   if (texture == nil && [textureName length] > 0) {
-    NSLog(@"Loading texture named %@", textureName);
-    self.textureImage = [UIImage imageNamed:textureName];
+    [self setTextureWithImageNamed:textureName];
     
-    // TODO: flip horizontal
-    
-    self.texture = [[Texture newTextureFromImage:textureImage.CGImage] autorelease];
+  } else if (geometry == nil) {
+    [self loadWireframe];
   }
-  
+    
   if (self.textureURL) {
     [self fetchTextureImage:self.textureURL];
   }
@@ -38,11 +44,12 @@
   glScalef (-scalar, scalar, scalar);
   glRotatef (180, 1, 0, 0);
   
-  //[self updateTexture];
-  
   glDepthMask(0);
   if (textureImage) {
-    [Geometry displaySphereWithTexture:self.texture];
+    [Geometry displaySphereWithTexture:texture];
+
+  } else {
+    [geometry displayWireframe];
   }  
   glDepthMask(1);
 }

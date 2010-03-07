@@ -27,6 +27,13 @@
   return self;
 }
 
+- (void) setTextureWithImageNamed:(NSString*)imgName {
+  self.textureName = imgName;
+  NSLog(@"Loading texture named %@", textureName);
+  self.textureImage = [UIImage imageNamed:textureName];    
+  self.texture = [[Texture newTextureFromImage:textureImage.CGImage] autorelease];
+}
+
 - (void) dealloc {
   [color release];
   [geometry release];
