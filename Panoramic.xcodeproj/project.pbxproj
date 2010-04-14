@@ -23,6 +23,7 @@
 		4D362E411132F3B800B4724A /* 64_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D362E3E1132F3B800B4724A /* 64_white.png */; };
 		4D362E421132F3B800B4724A /* 128_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D362E3F1132F3B800B4724A /* 128_white.png */; };
 		4D362F87113314D700B4724A /* 84_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D362F86113314D700B4724A /* 84_white.png */; };
+		4D443B2711755D2A007C4C9F /* lib3DAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D443B2611755D2A007C4C9F /* lib3DAR.a */; };
 		4D59E6631130B28B00AD04A7 /* 3dar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D59E65A1130B28B00AD04A7 /* 3dar.plist */; };
 		4D59E6641130B28B00AD04A7 /* 3dar_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D59E65B1130B28B00AD04A7 /* 3dar_logo.png */; };
 		4D59E6651130B28B00AD04A7 /* 3dar_marker_icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D59E65C1130B28B00AD04A7 /* 3dar_marker_icon1.png */; };
@@ -92,8 +93,6 @@
 		4D5ABDE4114324B400F689D2 /* TexturedGeometryView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D5ABDB2114324B400F689D2 /* TexturedGeometryView.mm */; };
 		4D7350E511349C0A00331FE3 /* sphere.pano.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7350E411349C0A00331FE3 /* sphere.pano.png */; };
 		4D7350E711349FC800331FE3 /* cube.pano.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7350E611349FC800331FE3 /* cube.pano.png */; };
-		4DCE4997113EDC0600D3FA09 /* SM3DARLibary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCE4996113EDC0600D3FA09 /* SM3DARLibary.a */; };
-		4DF508261141926100F55C3F /* sphere.test.pano.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DF508251141926100F55C3F /* sphere.test.pano.png */; };
 		4DF5082B1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DF5082A1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png */; };
 		4DF5082D114193C200F55C3F /* sphere.timezones.pano.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DF5082C114193C200F55C3F /* sphere.timezones.pano.png */; };
 /* End PBXBuildFile section */
@@ -122,6 +121,7 @@
 		4D362E3E1132F3B800B4724A /* 64_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 64_white.png; sourceTree = "<group>"; };
 		4D362E3F1132F3B800B4724A /* 128_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 128_white.png; sourceTree = "<group>"; };
 		4D362F86113314D700B4724A /* 84_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 84_white.png; sourceTree = "<group>"; };
+		4D443B2611755D2A007C4C9F /* lib3DAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = lib3DAR.a; sourceTree = "<group>"; };
 		4D59E65A1130B28B00AD04A7 /* 3dar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3dar.plist; sourceTree = "<group>"; };
 		4D59E65B1130B28B00AD04A7 /* 3dar_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_logo.png; sourceTree = "<group>"; };
 		4D59E65C1130B28B00AD04A7 /* 3dar_marker_icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon1.png; sourceTree = "<group>"; };
@@ -260,8 +260,6 @@
 		4D5ABDB2114324B400F689D2 /* TexturedGeometryView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TexturedGeometryView.mm; sourceTree = "<group>"; };
 		4D7350E411349C0A00331FE3 /* sphere.pano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sphere.pano.png; sourceTree = "<group>"; };
 		4D7350E611349FC800331FE3 /* cube.pano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube.pano.png; sourceTree = "<group>"; };
-		4DCE4996113EDC0600D3FA09 /* SM3DARLibary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = SM3DARLibary.a; sourceTree = "<group>"; };
-		4DF508251141926100F55C3F /* sphere.test.pano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sphere.test.pano.png; sourceTree = "<group>"; };
 		4DF5082A1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sphere.schauspielhaus_hamburg.pano.png; sourceTree = "<group>"; };
 		4DF5082C114193C200F55C3F /* sphere.timezones.pano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sphere.timezones.pano.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Panoramic-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Panoramic-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -279,8 +277,8 @@
 				4D59E67A1130B33C00AD04A7 /* OpenGLES.framework in Frameworks */,
 				4D59E67C1130B33C00AD04A7 /* QuartzCore.framework in Frameworks */,
 				4D59E68A1130B3C400AD04A7 /* MapKit.framework in Frameworks */,
-				4DCE4997113EDC0600D3FA09 /* SM3DARLibary.a in Frameworks */,
 				4D5ABDCD114324B400F689D2 /* libGHUnitIPhone2_1.a in Frameworks */,
+				4D443B2711755D2A007C4C9F /* lib3DAR.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +356,6 @@
 				4D7350E411349C0A00331FE3 /* sphere.pano.png */,
 				4DF5082C114193C200F55C3F /* sphere.timezones.pano.png */,
 				4DF5082A1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png */,
-				4DF508251141926100F55C3F /* sphere.test.pano.png */,
 				4D7350E611349FC800331FE3 /* cube.pano.png */,
 				4D362E3D1132F3B800B4724A /* DPad_BG.png */,
 				4D362E3E1132F3B800B4724A /* 64_white.png */,
@@ -391,7 +388,7 @@
 		4D59E6591130B28B00AD04A7 /* SM3DAR */ = {
 			isa = PBXGroup;
 			children = (
-				4DCE4996113EDC0600D3FA09 /* SM3DARLibary.a */,
+				4D443B2611755D2A007C4C9F /* lib3DAR.a */,
 				4D59E6CE1130B43400AD04A7 /* SM3DAR_keys.txt */,
 				4D59E6CF1130B43400AD04A7 /* bubble1.png */,
 				4D59E6D01130B43400AD04A7 /* compass_rose.png */,
@@ -756,7 +753,6 @@
 				4D362F87113314D700B4724A /* 84_white.png in Resources */,
 				4D7350E511349C0A00331FE3 /* sphere.pano.png in Resources */,
 				4D7350E711349FC800331FE3 /* cube.pano.png in Resources */,
-				4DF508261141926100F55C3F /* sphere.test.pano.png in Resources */,
 				4DF5082B1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png in Resources */,
 				4DF5082D114193C200F55C3F /* sphere.timezones.pano.png in Resources */,
 				4D5ABDBA114324B400F689D2 /* sphere.obj in Resources */,

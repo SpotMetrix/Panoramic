@@ -18,7 +18,7 @@
 
 	self.frame = CGRectMake(0, 0, img.size.width, img.size.height);
 	
-	[self addSubview:icon];
+	[self addSubview:self.icon];
 }
 
 - (void) didReceiveFocus {
