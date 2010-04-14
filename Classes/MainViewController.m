@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 
-  SM3DAR_Controller *sm3dar = [SM3DAR_Controller sharedSM3DAR_Controller];
+  SM3DAR_Controller *sm3dar = [SM3DAR_Controller sharedController];
   sm3dar.delegate = self;
   [self.view addSubview:sm3dar.view];  
   [self.view sendSubviewToBack:sm3dar.view];  
@@ -46,7 +46,7 @@
   point.view = pointView;  
 
   // add point to 3DAR scene
-  SM3DAR_Controller *sm3dar = [SM3DAR_Controller sharedSM3DAR_Controller];  
+  SM3DAR_Controller *sm3dar = [SM3DAR_Controller sharedController];  
   [sm3dar addPointOfInterest:point];
 }
 

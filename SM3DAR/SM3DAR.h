@@ -17,7 +17,7 @@
 
 typedef struct
 {
-    CGFloat x, y, z;
+  CGFloat x, y, z;
 } Coord3D;
 
 @protocol SM3DAR_Delegate;
@@ -94,7 +94,7 @@ typedef NSObject<SM3DAR_PointProtocol> SM3DAR_Point;
 @property (nonatomic, assign) CLLocation *currentLocation;
 @property (nonatomic, retain) CLLocationManager *locationManager;
 
-+ (SM3DAR_Controller*)sharedSM3DAR_Controller;
++ (SM3DAR_Controller*)sharedController;
 + (SM3DAR_Controller*)reinit;
 + (void)printMemoryUsage:(NSString*)message;
 - (void)forceRelease;
