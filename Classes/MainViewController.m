@@ -130,5 +130,8 @@
   [manager stopUpdatingLocation];
 }
 
+- (void)logoWasTapped {
+	[self showInfo];    
+}
 
 @end
