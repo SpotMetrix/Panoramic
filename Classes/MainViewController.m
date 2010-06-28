@@ -32,6 +32,7 @@
   sm3dar.delegate = self;
   [self.view addSubview:sm3dar.view];  
   [self.view sendSubviewToBack:sm3dar.view];  
+  [self loadPointsOfInterest];
 }
 
 - (void)viewDidAppear:(BOOL)animated {

@@ -12,5 +12,7 @@
 	<true/>
 	<key>3darLookMode</key>
 	<string>free</string>
+	<key>3darDisableLocationServices</key>
+	<true/>
 </dict>
 </plist>
