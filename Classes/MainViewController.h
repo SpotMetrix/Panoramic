@@ -10,7 +10,8 @@
 #import "FlipsideViewController.h"
 #import "SM3DAR.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, SM3DAR_Delegate, CLLocationManagerDelegate> {
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, SM3DAR_Delegate> 
+{
   SM3DAR_Point *point;
 }
 

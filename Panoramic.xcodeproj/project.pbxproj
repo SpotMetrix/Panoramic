@@ -19,10 +19,6 @@
 		289233A70DB2D0840083E9F9 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A50DB2D0840083E9F9 /* MainView.m */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
-		4D362E401132F3B800B4724A /* DPad_BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D362E3D1132F3B800B4724A /* DPad_BG.png */; };
-		4D362E411132F3B800B4724A /* 64_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D362E3E1132F3B800B4724A /* 64_white.png */; };
-		4D362E421132F3B800B4724A /* 128_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D362E3F1132F3B800B4724A /* 128_white.png */; };
-		4D362F87113314D700B4724A /* 84_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D362F86113314D700B4724A /* 84_white.png */; };
 		4D443B5911755FA2007C4C9F /* AsyncArtworkFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D443B5811755FA2007C4C9F /* AsyncArtworkFetcher.m */; };
 		4D443B6011755FF9007C4C9F /* CubeView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D443B5F11755FF9007C4C9F /* CubeView.mm */; };
 		4D59E6631130B28B00AD04A7 /* 3dar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D59E65A1130B28B00AD04A7 /* 3dar.plist */; };
@@ -44,12 +40,9 @@
 		4D59E6D31130B43400AD04A7 /* compass_rose.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D59E6D01130B43400AD04A7 /* compass_rose.png */; };
 		4D5ABDE3114324B400F689D2 /* SphereView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D5ABDB0114324B400F689D2 /* SphereView.mm */; };
 		4D5ABDE4114324B400F689D2 /* TexturedGeometryView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D5ABDB2114324B400F689D2 /* TexturedGeometryView.mm */; };
-		4D7350E511349C0A00331FE3 /* sphere.pano.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7350E411349C0A00331FE3 /* sphere.pano.png */; };
-		4D7350E711349FC800331FE3 /* cube.pano.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7350E611349FC800331FE3 /* cube.pano.png */; };
 		4D8698C5117CD5E300828E44 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8698C4117CD5E300828E44 /* MainWindow-iPad.xib */; };
-		4D8698F9117CDB2400828E44 /* lib3DAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8698F8117CDB2400828E44 /* lib3DAR.a */; };
-		4DF5082B1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DF5082A1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png */; };
-		4DF5082D114193C200F55C3F /* sphere.timezones.pano.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DF5082C114193C200F55C3F /* sphere.timezones.pano.png */; };
+		4DE046471208C0CB00011785 /* lib3DAR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE046461208C0CB00011785 /* lib3DAR.a */; };
+		4DE046C91208CD0800011785 /* sphere.pano.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4DE046C81208CD0800011785 /* sphere.pano.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,10 +65,6 @@
 		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Panoramic_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Panoramic_Prefix.pch; sourceTree = "<group>"; };
-		4D362E3D1132F3B800B4724A /* DPad_BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DPad_BG.png; sourceTree = "<group>"; };
-		4D362E3E1132F3B800B4724A /* 64_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 64_white.png; sourceTree = "<group>"; };
-		4D362E3F1132F3B800B4724A /* 128_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 128_white.png; sourceTree = "<group>"; };
-		4D362F86113314D700B4724A /* 84_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 84_white.png; sourceTree = "<group>"; };
 		4D443B5711755FA2007C4C9F /* AsyncArtworkFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncArtworkFetcher.h; path = Classes/AsyncArtworkFetcher.h; sourceTree = "<group>"; };
 		4D443B5811755FA2007C4C9F /* AsyncArtworkFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AsyncArtworkFetcher.m; path = Classes/AsyncArtworkFetcher.m; sourceTree = "<group>"; };
 		4D443B5E11755FF9007C4C9F /* CubeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CubeView.h; path = Classes/CubeView.h; sourceTree = "<group>"; };
@@ -102,12 +91,9 @@
 		4D5ABDB0114324B400F689D2 /* SphereView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = SphereView.mm; path = Classes/SphereView.mm; sourceTree = "<group>"; };
 		4D5ABDB1114324B400F689D2 /* TexturedGeometryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TexturedGeometryView.h; path = Classes/TexturedGeometryView.h; sourceTree = "<group>"; };
 		4D5ABDB2114324B400F689D2 /* TexturedGeometryView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = TexturedGeometryView.mm; path = Classes/TexturedGeometryView.mm; sourceTree = "<group>"; };
-		4D7350E411349C0A00331FE3 /* sphere.pano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sphere.pano.png; sourceTree = "<group>"; };
-		4D7350E611349FC800331FE3 /* cube.pano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube.pano.png; sourceTree = "<group>"; };
 		4D8698C4117CD5E300828E44 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
-		4D8698F8117CDB2400828E44 /* lib3DAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = lib3DAR.a; sourceTree = "<group>"; };
-		4DF5082A1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sphere.schauspielhaus_hamburg.pano.png; sourceTree = "<group>"; };
-		4DF5082C114193C200F55C3F /* sphere.timezones.pano.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sphere.timezones.pano.png; sourceTree = "<group>"; };
+		4DE046461208C0CB00011785 /* lib3DAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = lib3DAR.a; sourceTree = "<group>"; };
+		4DE046C81208CD0800011785 /* sphere.pano.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sphere.pano.jpg; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Panoramic-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Panoramic-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,7 +109,7 @@
 				4D59E67A1130B33C00AD04A7 /* OpenGLES.framework in Frameworks */,
 				4D59E67C1130B33C00AD04A7 /* QuartzCore.framework in Frameworks */,
 				4D59E68A1130B3C400AD04A7 /* MapKit.framework in Frameworks */,
-				4D8698F9117CDB2400828E44 /* lib3DAR.a in Frameworks */,
+				4DE046471208C0CB00011785 /* lib3DAR.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +167,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				4D59E6591130B28B00AD04A7 /* SM3DAR */,
+				4D59E6591130B28B00AD04A7 /* 3DAR */,
 				289233A00DB2D0730083E9F9 /* Main View */,
 				281C6CD70DB2D82200F60ACC /* Flipside View */,
 				080E96DDFE201D6D7F000001 /* Application Delegate */,
@@ -206,14 +192,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4D7350E411349C0A00331FE3 /* sphere.pano.png */,
-				4DF5082C114193C200F55C3F /* sphere.timezones.pano.png */,
-				4DF5082A1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png */,
-				4D7350E611349FC800331FE3 /* cube.pano.png */,
-				4D362E3D1132F3B800B4724A /* DPad_BG.png */,
-				4D362E3E1132F3B800B4724A /* 64_white.png */,
-				4D362F86113314D700B4724A /* 84_white.png */,
-				4D362E3F1132F3B800B4724A /* 128_white.png */,
+				4DE046C81208CD0800011785 /* sphere.pano.jpg */,
 				4D59E6C11130B40F00AD04A7 /* Default.png */,
 				4D59E6C21130B40F00AD04A7 /* Icon.png */,
 				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
@@ -238,14 +217,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4D59E6591130B28B00AD04A7 /* SM3DAR */ = {
+		4D59E6591130B28B00AD04A7 /* 3DAR */ = {
 			isa = PBXGroup;
 			children = (
-				4D8698F8117CDB2400828E44 /* lib3DAR.a */,
+				4DE046461208C0CB00011785 /* lib3DAR.a */,
+				4D59E6721130B2D500AD04A7 /* SM3DAR.h */,
+				4D59E65A1130B28B00AD04A7 /* 3dar.plist */,
 				4D59E6CE1130B43400AD04A7 /* SM3DAR_keys.txt */,
 				4D59E6CF1130B43400AD04A7 /* bubble1.png */,
 				4D59E6D01130B43400AD04A7 /* compass_rose.png */,
-				4D59E65A1130B28B00AD04A7 /* 3dar.plist */,
 				4D59E65B1130B28B00AD04A7 /* 3dar_logo.png */,
 				4D59E65C1130B28B00AD04A7 /* 3dar_marker_icon1.png */,
 				4D59E65D1130B28B00AD04A7 /* 3dar_marker_icon2.png */,
@@ -253,9 +233,8 @@
 				4D59E65F1130B28B00AD04A7 /* 3dar_marker_icon4.png */,
 				4D59E6601130B28B00AD04A7 /* 3dar_marker_icon5.png */,
 				4D59E6611130B28B00AD04A7 /* 3dar_marker_icon6.png */,
-				4D59E6721130B2D500AD04A7 /* SM3DAR.h */,
 			);
-			path = SM3DAR;
+			path = 3DAR;
 			sourceTree = "<group>";
 		};
 		4D8698C3117CD5E300828E44 /* Resources-iPad */ = {
@@ -331,15 +310,8 @@
 				4D59E6D11130B43400AD04A7 /* SM3DAR_keys.txt in Resources */,
 				4D59E6D21130B43400AD04A7 /* bubble1.png in Resources */,
 				4D59E6D31130B43400AD04A7 /* compass_rose.png in Resources */,
-				4D362E401132F3B800B4724A /* DPad_BG.png in Resources */,
-				4D362E411132F3B800B4724A /* 64_white.png in Resources */,
-				4D362E421132F3B800B4724A /* 128_white.png in Resources */,
-				4D362F87113314D700B4724A /* 84_white.png in Resources */,
-				4D7350E511349C0A00331FE3 /* sphere.pano.png in Resources */,
-				4D7350E711349FC800331FE3 /* cube.pano.png in Resources */,
-				4DF5082B1141937E00F55C3F /* sphere.schauspielhaus_hamburg.pano.png in Resources */,
-				4DF5082D114193C200F55C3F /* sphere.timezones.pano.png in Resources */,
 				4D8698C5117CD5E300828E44 /* MainWindow-iPad.xib in Resources */,
+				4DE046C91208CD0800011785 /* sphere.pano.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,22 +347,19 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Panoramic_Prefix.pch;
-				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Panoramic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/SM3DAR\"",
-					"\"$(SRCROOT)/SM3DAR_Common/Lib/HTTPRiot/httpriot-0.6.6/Vendor/gh-unit-iphone\"",
-					"\"$(SRCROOT)/../../SM3DARLibrary/SM3DARLibary/build/Debug-iphoneos\"",
-					"\"$(SRCROOT)/SM3DAR_Common/Data\"",
-					"\"$(SRCROOT)/../../SM3DARLibrary/SM3DARLibrary/build/Release-iphoneos\"",
+					"\"$(SRCROOT)/../../SM3DARLibrary/SM3DARLibrary/build/Debug-iphoneos\"",
+					"\"$(SRCROOT)/3DAR\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-lstdc++",
 				);
 				PRODUCT_NAME = Panoramic;
-				SDKROOT = iphoneos3.1;
 			};
 			name = Debug;
 		};
@@ -401,22 +370,19 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Panoramic_Prefix.pch;
-				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Panoramic-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/SM3DAR\"",
-					"\"$(SRCROOT)/SM3DAR_Common/Lib/HTTPRiot/httpriot-0.6.6/Vendor/gh-unit-iphone\"",
-					"\"$(SRCROOT)/../../SM3DARLibrary/SM3DARLibary/build/Debug-iphoneos\"",
-					"\"$(SRCROOT)/SM3DAR_Common/Data\"",
-					"\"$(SRCROOT)/../../SM3DARLibrary/SM3DARLibrary/build/Release-iphoneos\"",
+					"\"$(SRCROOT)/../../SM3DARLibrary/SM3DARLibrary/build/Debug-iphoneos\"",
+					"\"$(SRCROOT)/3DAR\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-lstdc++",
 				);
 				PRODUCT_NAME = Panoramic;
-				SDKROOT = iphoneos3.1;
 			};
 			name = Release;
 		};
@@ -430,7 +396,7 @@
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Debug;
 		};
@@ -444,7 +410,7 @@
 				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Release;
 		};
