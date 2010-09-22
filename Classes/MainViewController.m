@@ -88,8 +88,8 @@
     // Next try loading the spherical JPG.    
     if (![self validImage:texture])
     {
-        NSLog(@"Attempting to load %@", textureName);
         textureName = [PANO_SPHERE_TEXTURE_NAME stringByAppendingString:@".jpg"];
+        NSLog(@"Attempting to load %@", textureName);
         texture = [UIImage imageNamed:textureName];
     }        
     
@@ -108,8 +108,8 @@
     // Next try loading the cubical JPG.    
 	if (![self validImage:texture])
     {
-        NSLog(@"Attempting to load %@", textureName);
         textureName = [PANO_CUBE_TEXTURE_NAME stringByAppendingString:@".jpg"];
+        NSLog(@"Attempting to load %@", textureName);
         texture = [UIImage imageNamed:textureName];
     }        
     

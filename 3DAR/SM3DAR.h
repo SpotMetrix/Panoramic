@@ -1,9 +1,11 @@
 /*
  *  SM3DAR.h
+ *  3DAR API header
  *
  *  Copyright 2009 Spot Metrix, Inc. All rights reserved.
+ *  http://spotmetrix.com
  *
- *  API for 3DAR.
+ *  Version 4.0.4
  *
  */
 
@@ -36,6 +38,7 @@ typedef struct
 @property (assign) BOOL hasFocus;
 - (Coord3D) worldCoordinate;
 - (void) translateX:(CGFloat)x Y:(CGFloat)y Z:(CGFloat)z;
+- (Coord3D) unitVectorFromOrigin;
 @optional
 @property (nonatomic, assign) Coord3D worldPointVector;
 - (void) step;
@@ -110,12 +113,15 @@ typedef NSObject<SM3DAR_PointProtocol> SM3DAR_Point;
 @property (nonatomic, assign) CGFloat currentPitch;
 @property (nonatomic, assign) CGFloat currentRoll;
 @property (nonatomic, assign) CGFloat mapZoomPadding;
+@property (nonatomic, assign) CGFloat cameraAltitudeMeters;
+@property (nonatomic, assign) BOOL running;
 
 + (SM3DAR_Controller*)sharedController;
 + (SM3DAR_Controller*)reinit;
 + (void)printMemoryUsage:(NSString*)message;
 + (void)printMatrix:(CATransform3D)t;
 + (Coord3D) worldCoordinateFor:(CLLocation*)location;
++ (Coord3D) unitVector:(Coord3D)coord;
 - (void)forceRelease;
 - (void)setFrame:(CGRect)newFrame;
 - (void)addPoint:(SM3DAR_Point*)point;
@@ -132,6 +138,7 @@ typedef NSObject<SM3DAR_PointProtocol> SM3DAR_Point;
 - (void)loadMarkersFromCSVFile:(NSString*)fileName hasHeader:(BOOL)hasHeader;
 - (void)loadMarkersFromCSV:(NSString*)csv hasHeader:(BOOL)hasHeader;
 - (SM3DAR_PointOfInterest*)initPointOfInterest:(NSDictionary*)properties;
+- (SM3DAR_PointOfInterest*)initPointOfInterestWithLatitude:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude altitude:(CGFloat)altitude title:(NSString*)poiTitle subtitle:(NSString*)poiSubtitle markerViewClass:(Class)poiMarkerViewClass properties:(NSDictionary*)properties;
 - (SM3DAR_PointOfInterest*)initPointOfInterest:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude altitude:(CGFloat)altitude title:(NSString*)poiTitle subtitle:(NSString*)poiSubtitle markerViewClass:(Class)poiMarkerViewClass properties:(NSDictionary*)properties;
 - (void)addPointOfInterestWithLatitude:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude altitude:(CGFloat)altitude title:(NSString*)poiTitle subtitle:(NSString*)poiSubtitle markerViewClass:(Class)poiMarkerViewClass properties:(NSDictionary*)properties;
 - (BOOL)changeCurrentLocation:(CLLocation*)newLocation;
@@ -175,6 +182,7 @@ typedef NSObject<SM3DAR_PointProtocol> SM3DAR_Point;
 - (CGFloat)gearSpeed;
 - (NSInteger)numberOfTeethInGear;
 - (void) gearHasTurned;
+- (Coord3D) unitVectorFromOrigin;
 @end
 
 
@@ -211,6 +219,7 @@ typedef NSObject<SM3DAR_PointProtocol> SM3DAR_Point;
 - (CGFloat)gearSpeed;
 - (NSInteger)numberOfTeethInGear;
 - (void) gearHasTurned;
+- (Coord3D) unitVectorFromOrigin;
 
 @end
 
