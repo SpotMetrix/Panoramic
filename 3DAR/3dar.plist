@@ -16,5 +16,7 @@
 	<true/>
 	<key>3darDrawGroundplaneGrid</key>
 	<false/>
+	<key>3darDisableGyro</key>
+	<false/>
 </dict>
 </plist>

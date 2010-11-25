@@ -2,10 +2,10 @@
  *  SM3DAR.h
  *  3DAR API header
  *
- *  Copyright 2009 Spot Metrix, Inc. All rights reserved.
- *  http://spotmetrix.com
+ *  Copyright 2010 Spot Metrix, Inc. All rights reserved.
+ *  Please see http://spotmetrix.com
  *
- *  Version 4.0.4
+ *  Version 4.0.7 Beta 1
  *
  */
 
