@@ -10,15 +10,13 @@
 #import "FlipsideViewController.h"
 #import "SM3DAR.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, SM3DAR_Delegate> 
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, SM3DARDelegate, MKMapViewDelegate> 
 {
-  SM3DAR_Point *point;
+    IBOutlet SM3DARMapView *mapView;
 }
 
-@property (nonatomic, retain) SM3DAR_Point *point;
+@property (nonatomic, retain) IBOutlet SM3DARMapView *mapView;
 
 - (IBAction)showInfo;
-- (void) addSphereWithTextureNamed:(NSString*)textureName;
-- (void) addCubeWithTextureNamed:(NSString*)textureName;
 
 @end

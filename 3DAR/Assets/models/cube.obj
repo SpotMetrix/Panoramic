@@ -1,0 +1,41 @@
+# Alias OBJ Model File
+# Exported from SketchUp, (c) 2000-2006 Google, Inc.
+# File units = meters
+
+mtllib blue.mtl
+
+g Mesh1 Model
+
+usemtl blue
+v 1 0 0
+vt -1 0
+vn 0 0 -1
+v 0 0 0
+vt 0 0
+v 0 1 0
+vt 0 1
+v 1 1 0
+vt -1 1
+f 1/1/1 2/2/1 3/3/1 4/4/1 
+
+vn 0 -1 0
+vt 1 0
+v 1 0 1
+vt 1 1
+v 0 0 1
+f 2/2/2 1/5/2 5/6/2 6/3/2 
+
+vn 1 0 0
+v 1 1 1
+f 1/2/3 4/5/3 7/6/3 5/3/3 
+
+vn 0 1 0
+v 0 1 1
+f 4/1/4 3/2/4 8/3/4 7/4/4 
+
+vn -1 0 0
+f 3/1/5 2/2/5 6/3/5 8/4/5 
+
+vn 0 0 1
+f 6/2/6 5/5/6 7/6/6 8/3/6 
+
