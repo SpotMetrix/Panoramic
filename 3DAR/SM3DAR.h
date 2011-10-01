@@ -1,10 +1,16 @@
 /*
- *  3DAR Version 0.9.5
+ *  3DAR Version 2.1.2
+ *  Released in Yorient on 8/16/2011
  *
  *  SM3DAR.h
  *
  *  Copyright 2009 Spot Metrix, Inc. All rights reserved.
  *  http://3DAR.us
+ *
+ *
+ * Changes since 2.1.1:
+ *   - Fix: GL view was not being resized properly when sm3dar view frame was changed.
+ *   - Fix: focusView no longer blocks POI taps.
  *
  */
 
@@ -13,10 +19,9 @@
 #import <CoreLocation/CoreLocation.h>
 
 
-/*************************************************
- 
+/************************************************* 
  //
- // Typical usage: 
+ // Typical SM3DARMapView usage.
  //
  - (void) viewDidLoad 
  {
@@ -24,8 +29,11 @@
  mapView.delegate = self;
  mapView.showsUserLocation = YES;
  
- [self.view addSubview:mapView];    
  
+ // Only add the mapView and call init3DAR 
+ // if the mapView is not already set up in an .xib file.
+ 
+ [self.view addSubview:mapView];   
  [mapView init3DAR];
  } 
  
@@ -33,7 +41,6 @@
  { 
  [mapView addAnnotation:myAnnotation];
  }
- 
  ************************************************/
 
 @protocol SM3DARPointProtocol;
@@ -58,29 +65,65 @@ typedef NSObject<SM3DARPointProtocol> SM3DARPoint;
 - (void) mapAnnotationView:(MKAnnotationView*)annotationView calloutAccessoryControlTapped:(UIControl*)control;
 @end
 
-@protocol SM3DARMarkerCalloutViewDelegate
+
+//
+//
+//
+@protocol SM3DARCalloutViewDelegate
 - (void) calloutViewWasTappedForPoint:(SM3DARPoint *)point;
 @end
 
-@class SM3DARMarkerCalloutView;
 
-@interface SM3DARMapView : MKMapView <SM3DARDelegate, MKMapViewDelegate, SM3DARMarkerCalloutViewDelegate> {}
+//
+//
+//
+@protocol SM3DARFocusDelegate
+@optional
+-(void)pointDidGainFocus:(SM3DARPoint*)point;
+-(void)pointDidLoseFocus:(SM3DARPoint*)point;
+-(void)updatePositionAndOrientation:(CGFloat)screenOrientationRadians;
+
+@end
+
+
+//
+//
+//
+@interface SM3DARDetailCalloutView : UIView <SM3DARFocusDelegate> {}
+
+@property (nonatomic, retain) UILabel *titleLabel;
+@property (nonatomic, retain) UILabel *subtitleLabel;
+@property (nonatomic, retain) UILabel *distanceLabel;
+@property (nonatomic, retain) UIButton *disclosureButton;    
+@property (nonatomic, assign) id<SM3DARCalloutViewDelegate> delegate;
+
+@end
+
+
+//
+//
+//
+@interface SM3DARMapView : MKMapView <SM3DARDelegate, MKMapViewDelegate, SM3DARCalloutViewDelegate> {}
 
 @property (nonatomic, retain) UIView *containerView;
-@property (nonatomic, retain) SM3DARMarkerCalloutView *calloutView;
+@property (nonatomic, retain) SM3DARDetailCalloutView *calloutView;
 @property (nonatomic, retain) UIView *hudView;
 @property (nonatomic, retain) SM3DARController *sm3dar;
 @property (nonatomic, assign) CGFloat mapZoomPadding;
 
 - (void) init3DAR;
 - (void) add3darContainer:(SM3DARController *)sm3dar;
+- (void) addAnnotation:(id)object withPointView:(UIView *)poiView;
 - (void) zoomMapToFitPointsIncludingUserLocation:(BOOL)includeUser;
 - (void) zoomMapToFit;
 - (void) startCamera;
 - (void) stopCamera;
 - (void) addBackground;
+- (void) removeBackground;
 - (void) moveToLocation:(CLLocation *)newLocation;
 - (void) removeAllAnnotations;
+- (SM3DARPoint *) pointForAnnotation:(id)object;
+- (id) annotationForPoint:(SM3DARPoint *)point;
 
 @end
 
@@ -134,19 +177,6 @@ typedef struct
 //
 //
 //
-@protocol SM3DARFocusDelegate
-
--(void)pointDidGainFocus:(SM3DARPoint*)point;
-@optional
--(void)pointDidLoseFocus:(SM3DARPoint*)point;
--(void)updatePositionAndOrientation:(CGFloat)screenOrientationRadians;
-
-@end
-
-
-//
-//
-//
 @interface SM3DARController : UIViewController <UIAccelerometerDelegate, CLLocationManagerDelegate, MKMapViewDelegate> {
 }
 
@@ -161,7 +191,7 @@ typedef struct
 @property (nonatomic, retain) SM3DARPoint *selectedPOI;
 @property (nonatomic, assign) Class markerViewClass;
 @property (nonatomic, retain) NSString *mapAnnotationImageName;
-@property (nonatomic, retain) NSObject<SM3DARFocusDelegate> *focusView;
+@property (nonatomic, retain) SM3DARFocusView *focusView;
 @property (nonatomic, assign) CGFloat screenOrientationRadians;
 @property (nonatomic, retain) UIView *glView;
 @property (nonatomic, retain) UIView *hudView;
@@ -194,6 +224,8 @@ typedef struct
 - (void)forceRelease;
 - (void)setFrame:(CGRect)newFrame;
 - (void)addPoint:(SM3DARPoint*)point;
+- (SM3DARPoint*)addPointAtLocation:(CLLocation *)poiLocation title:(NSString *)poiTitle subtitle:(NSString *)poiSubtitle url:(NSURL *)poiURL properties:(NSDictionary *)poiProperties view:(UIView *)poiView;
+- (SM3DARPoint*)addPointAtLatitude:(CLLocationDegrees)poiLatitude longitude:(CLLocationDegrees)poiLongitude altitude:(CLLocationDistance)poiAltitude title:(NSString *)poiTitle view:(UIView*)poiView;
 - (void)addPointOfInterest:(SM3DARPoint*)point;
 - (void)addPointsOfInterest:(NSArray*)points;
 - (void)addPointsOfInterest:(NSArray*)points addToMap:(BOOL)addToMap;
@@ -243,8 +275,9 @@ typedef struct
 - (Coord3D)solarPositionScaled:(CGFloat)meters;
 - (void)initOrigin;
 - (Coord3D)ray:(CGPoint)screenPoint;
-- (void) setCameraAltitudeMeters:(CGFloat)altitude;
-- (void) setCameraPosition:(Coord3D)coordRelativeToOrigin;
+- (void)setCameraAltitudeMeters:(CGFloat)altitude;
+- (void)setCameraPosition:(Coord3D)coordRelativeToOrigin;
+- (void)cycleCameraAltitude;
 
 @end
 
@@ -288,8 +321,9 @@ typedef struct
 @property (nonatomic, assign) NSUInteger identifier;
 @property (nonatomic, assign) CGFloat gearPosition;
 
-- (id)initWithLocation:(CLLocation*)loc properties:(NSDictionary*)props;
-- (id)initWithLocation:(CLLocation*)loc title:(NSString*)title subtitle:(NSString*)subtitle url:(NSURL*)url;
+- (id)initWithLocation:(CLLocation*)theLocation title:(NSString*)theTitle subtitle:(NSString*)theSubtitle url:(NSURL*)theURL properties:(NSDictionary *)theProperties;
+- (id)initWithLocation:(CLLocation*)theLocation title:(NSString*)theTitle subtitle:(NSString*)theSubtitle url:(NSURL*)theURL;
+- (id)initWithLocation:(CLLocation*)theLocation properties:(NSDictionary*)theProperties;
 - (CGFloat)distanceInMetersFrom:(CLLocation*)otherPoint;
 - (CGFloat)distanceInMetersFromCurrentLocation;
 - (NSString*)formattedDistanceInMetersFrom:(CLLocation*)otherPoint;
@@ -342,10 +376,23 @@ typedef struct
 //
 //
 //
+@interface SM3DARSimpleCalloutView : UIView {
+}
+
+@property (nonatomic, retain) UILabel *label;
+
+- (id) initWithFrame:(CGRect)frame title:(NSString *)calloutTitle;
+@end
+
+
+//
+//
+//
 @interface SM3DARIconMarkerView : SM3DARMarkerView {
 }
 
 @property (nonatomic, retain) UIImageView *icon;
+@property (nonatomic, retain) SM3DARSimpleCalloutView *callout;
 
 - (id)initWithPointOfInterest:(SM3DARPointOfInterest*)pointOfInterest imageName:(NSString *)imageName;
 + (NSString*)randomIconName;
@@ -456,6 +503,18 @@ typedef struct
 @end
 
 
+//
+//
+//
+@interface SM3DARCouchDB : NSObject 
+- (id) initWithDatabase:(NSString*)dbName host:(NSString*)h port:(NSUInteger)p user:(NSString*)u password:(NSString*)pwd;
+- (void) changeDatabase:(NSString *)dbName;
+- (void) createDocumentWithBody:(NSString *)body encoded:(BOOL)encoded;
+- (void) createDocument:(NSDictionary *)content;
+- (void) createDocument:(NSDictionary *)content timestamp:(NSDate *)timestamp;
+@end
+
+
 #define SM3DAR_POI_LATITUDE @"latitude"
 #define SM3DAR_POI_ALTITUDE @"altitude"
 #define SM3DAR_POI_LONGITUDE @"longitude"
@@ -464,3 +523,7 @@ typedef struct
 #define SM3DAR_POI_URL @"url"
 #define SM3DAR_POI_VIEW_CLASS_NAME @"view_class_name"
 #define SM3DAR_POI_DEFAULT_VIEW_CLASS_NAME @"SM3DARIconMarkerView"
+#define SM3DAR_DEFAULT_CAMERA_ALTITUDE_LOW 3.5f
+#define SM3DAR_DEFAULT_CAMERA_ALTITUDE_MID 50.0f
+#define SM3DAR_DEFAULT_CAMERA_ALTITUDE_HIGH 350.0f
+#define SM3DAR_NOTIF_MARKER_WAS_TOUCHED @"SM3DAR_NOTIF_MARKER_WAS_TOUCHED"

@@ -28,19 +28,22 @@
 		4D59E6C41130B40F00AD04A7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D59E6C21130B40F00AD04A7 /* Icon.png */; };
 		4D8698C5117CD5E300828E44 /* MainWindow-iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8698C4117CD5E300828E44 /* MainWindow-iPad.xib */; };
 		4DE046C91208CD0800011785 /* 3dar_pano_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4DE046C81208CD0800011785 /* 3dar_pano_bg.jpg */; };
-		A62E37E6138D4ED100DAE057 /* 3dar.plist in Resources */ = {isa = PBXBuildFile; fileRef = A62E37D4138D4ED100DAE057 /* 3dar.plist */; };
-		A62E37E7138D4ED100DAE057 /* 3dar_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A62E37D7138D4ED100DAE057 /* 3dar_logo.png */; };
-		A62E37E8138D4ED100DAE057 /* 3dar_marker_icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = A62E37D8138D4ED100DAE057 /* 3dar_marker_icon1.png */; };
-		A62E37E9138D4ED100DAE057 /* 3dar_marker_icon1_focused.png in Resources */ = {isa = PBXBuildFile; fileRef = A62E37D9138D4ED100DAE057 /* 3dar_marker_icon1_focused.png */; };
-		A62E37EB138D4ED100DAE057 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = A62E37DB138D4ED100DAE057 /* bubble.png */; };
-		A62E37EC138D4ED100DAE057 /* cube.obj in Resources */ = {isa = PBXBuildFile; fileRef = A62E37DD138D4ED100DAE057 /* cube.obj */; };
-		A62E37ED138D4ED100DAE057 /* moebius.obj in Resources */ = {isa = PBXBuildFile; fileRef = A62E37DE138D4ED100DAE057 /* moebius.obj */; };
-		A62E37EE138D4ED100DAE057 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = A62E37DF138D4ED100DAE057 /* sphere.obj */; };
-		A62E37EF138D4ED100DAE057 /* star.obj in Resources */ = {isa = PBXBuildFile; fileRef = A62E37E0138D4ED100DAE057 /* star.obj */; };
-		A62E37F0138D4ED100DAE057 /* ufo.obj in Resources */ = {isa = PBXBuildFile; fileRef = A62E37E1138D4ED100DAE057 /* ufo.obj */; };
-		A62E37F2138D4ED100DAE057 /* SM3DAR_keys.txt in Resources */ = {isa = PBXBuildFile; fileRef = A62E37E5138D4ED100DAE057 /* SM3DAR_keys.txt */; };
-		A6AAD138138E19F100D66AA5 /* 3dar_pano_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A62E37DA138D4ED100DAE057 /* 3dar_pano_bg.png */; };
-		A6AAD181138E26C700D66AA5 /* lib3DAR_v0_9_5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6AAD180138E26C700D66AA5 /* lib3DAR_v0_9_5.a */; };
+		A666A45214367EA500FBE29E /* 3dar.plist in Resources */ = {isa = PBXBuildFile; fileRef = A666A43D14367EA400FBE29E /* 3dar.plist */; };
+		A666A45314367EA500FBE29E /* 3dar_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A666A44014367EA500FBE29E /* 3dar_logo.png */; };
+		A666A45414367EA500FBE29E /* 3dar_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A666A44114367EA500FBE29E /* 3dar_logo@2x.png */; };
+		A666A45514367EA500FBE29E /* 3dar_marker_icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = A666A44214367EA500FBE29E /* 3dar_marker_icon1.png */; };
+		A666A45614367EA500FBE29E /* 3dar_marker_icon1_focused.png in Resources */ = {isa = PBXBuildFile; fileRef = A666A44314367EA500FBE29E /* 3dar_marker_icon1_focused.png */; };
+		A666A45714367EA500FBE29E /* 3dar_pano_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = A666A44414367EA500FBE29E /* 3dar_pano_bg.png */; };
+		A666A45814367EA500FBE29E /* ar_icon_black_34x34.png in Resources */ = {isa = PBXBuildFile; fileRef = A666A44514367EA500FBE29E /* ar_icon_black_34x34.png */; };
+		A666A45914367EA500FBE29E /* ar_icon_white_34x34.png in Resources */ = {isa = PBXBuildFile; fileRef = A666A44614367EA500FBE29E /* ar_icon_white_34x34.png */; };
+		A666A45A14367EA500FBE29E /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = A666A44714367EA500FBE29E /* bubble.png */; };
+		A666A45B14367EA500FBE29E /* cube.obj in Resources */ = {isa = PBXBuildFile; fileRef = A666A44914367EA500FBE29E /* cube.obj */; };
+		A666A45C14367EA500FBE29E /* moebius.obj in Resources */ = {isa = PBXBuildFile; fileRef = A666A44A14367EA500FBE29E /* moebius.obj */; };
+		A666A45D14367EA500FBE29E /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = A666A44B14367EA500FBE29E /* sphere.obj */; };
+		A666A45E14367EA500FBE29E /* star.obj in Resources */ = {isa = PBXBuildFile; fileRef = A666A44C14367EA500FBE29E /* star.obj */; };
+		A666A45F14367EA500FBE29E /* ufo.obj in Resources */ = {isa = PBXBuildFile; fileRef = A666A44D14367EA500FBE29E /* ufo.obj */; };
+		A666A46014367EA500FBE29E /* lib3DAR_v2_1_2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A666A44F14367EA500FBE29E /* lib3DAR_v2_1_2.a */; };
+		A666A46114367EA500FBE29E /* SM3DAR_keys.txt in Resources */ = {isa = PBXBuildFile; fileRef = A666A45114367EA500FBE29E /* SM3DAR_keys.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,20 +76,23 @@
 		4D8698C4117CD5E300828E44 /* MainWindow-iPad.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = "MainWindow-iPad.xib"; path = "Resources-iPad/MainWindow-iPad.xib"; sourceTree = "<group>"; };
 		4DE046C81208CD0800011785 /* 3dar_pano_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3dar_pano_bg.jpg; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Panoramic-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Panoramic-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		A62E37D4138D4ED100DAE057 /* 3dar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3dar.plist; sourceTree = "<group>"; };
-		A62E37D7138D4ED100DAE057 /* 3dar_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_logo.png; sourceTree = "<group>"; };
-		A62E37D8138D4ED100DAE057 /* 3dar_marker_icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon1.png; sourceTree = "<group>"; };
-		A62E37D9138D4ED100DAE057 /* 3dar_marker_icon1_focused.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon1_focused.png; sourceTree = "<group>"; };
-		A62E37DA138D4ED100DAE057 /* 3dar_pano_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_pano_bg.png; sourceTree = "<group>"; };
-		A62E37DB138D4ED100DAE057 /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
-		A62E37DD138D4ED100DAE057 /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
-		A62E37DE138D4ED100DAE057 /* moebius.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moebius.obj; sourceTree = "<group>"; };
-		A62E37DF138D4ED100DAE057 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
-		A62E37E0138D4ED100DAE057 /* star.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = star.obj; sourceTree = "<group>"; };
-		A62E37E1138D4ED100DAE057 /* ufo.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo.obj; sourceTree = "<group>"; };
-		A62E37E4138D4ED100DAE057 /* SM3DAR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SM3DAR.h; sourceTree = "<group>"; };
-		A62E37E5138D4ED100DAE057 /* SM3DAR_keys.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SM3DAR_keys.txt; sourceTree = "<group>"; };
-		A6AAD180138E26C700D66AA5 /* lib3DAR_v0_9_5.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = lib3DAR_v0_9_5.a; sourceTree = "<group>"; };
+		A666A43D14367EA400FBE29E /* 3dar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3dar.plist; sourceTree = "<group>"; };
+		A666A44014367EA500FBE29E /* 3dar_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_logo.png; sourceTree = "<group>"; };
+		A666A44114367EA500FBE29E /* 3dar_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3dar_logo@2x.png"; sourceTree = "<group>"; };
+		A666A44214367EA500FBE29E /* 3dar_marker_icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon1.png; sourceTree = "<group>"; };
+		A666A44314367EA500FBE29E /* 3dar_marker_icon1_focused.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon1_focused.png; sourceTree = "<group>"; };
+		A666A44414367EA500FBE29E /* 3dar_pano_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_pano_bg.png; sourceTree = "<group>"; };
+		A666A44514367EA500FBE29E /* ar_icon_black_34x34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar_icon_black_34x34.png; sourceTree = "<group>"; };
+		A666A44614367EA500FBE29E /* ar_icon_white_34x34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ar_icon_white_34x34.png; sourceTree = "<group>"; };
+		A666A44714367EA500FBE29E /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		A666A44914367EA500FBE29E /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
+		A666A44A14367EA500FBE29E /* moebius.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = moebius.obj; sourceTree = "<group>"; };
+		A666A44B14367EA500FBE29E /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
+		A666A44C14367EA500FBE29E /* star.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = star.obj; sourceTree = "<group>"; };
+		A666A44D14367EA500FBE29E /* ufo.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ufo.obj; sourceTree = "<group>"; };
+		A666A44F14367EA500FBE29E /* lib3DAR_v2_1_2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = lib3DAR_v2_1_2.a; sourceTree = "<group>"; };
+		A666A45014367EA500FBE29E /* SM3DAR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SM3DAR.h; sourceTree = "<group>"; };
+		A666A45114367EA500FBE29E /* SM3DAR_keys.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SM3DAR_keys.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +108,7 @@
 				4D59E67C1130B33C00AD04A7 /* QuartzCore.framework in Frameworks */,
 				4D59E68A1130B3C400AD04A7 /* MapKit.framework in Frameworks */,
 				4D24672F120F872900943D02 /* CoreMotion.framework in Frameworks */,
-				A6AAD181138E26C700D66AA5 /* lib3DAR_v0_9_5.a in Frameworks */,
+				A666A46014367EA500FBE29E /* lib3DAR_v2_1_2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +158,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				A62E37D3138D4ED100DAE057 /* 3DAR */,
+				A666A43C14367EA400FBE29E /* 3DAR */,
 				289233A00DB2D0730083E9F9 /* Main View */,
 				281C6CD70DB2D82200F60ACC /* Flipside View */,
 				080E96DDFE201D6D7F000001 /* Application Delegate */,
@@ -211,55 +217,58 @@
 			name = "Resources-iPad";
 			sourceTree = "<group>";
 		};
-		A62E37D3138D4ED100DAE057 /* 3DAR */ = {
+		A666A43C14367EA400FBE29E /* 3DAR */ = {
 			isa = PBXGroup;
 			children = (
-				A62E37D4138D4ED100DAE057 /* 3dar.plist */,
-				A62E37D5138D4ED100DAE057 /* Assets */,
-				A62E37E2138D4ED100DAE057 /* Lib */,
-				A62E37E4138D4ED100DAE057 /* SM3DAR.h */,
-				A62E37E5138D4ED100DAE057 /* SM3DAR_keys.txt */,
+				A666A43D14367EA400FBE29E /* 3dar.plist */,
+				A666A43E14367EA400FBE29E /* Assets */,
+				A666A44E14367EA500FBE29E /* Lib */,
+				A666A45014367EA500FBE29E /* SM3DAR.h */,
+				A666A45114367EA500FBE29E /* SM3DAR_keys.txt */,
 			);
 			path = 3DAR;
 			sourceTree = "<group>";
 		};
-		A62E37D5138D4ED100DAE057 /* Assets */ = {
+		A666A43E14367EA400FBE29E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				A62E37D6138D4ED100DAE057 /* images */,
-				A62E37DC138D4ED100DAE057 /* models */,
+				A666A43F14367EA400FBE29E /* images */,
+				A666A44814367EA500FBE29E /* models */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		A62E37D6138D4ED100DAE057 /* images */ = {
+		A666A43F14367EA400FBE29E /* images */ = {
 			isa = PBXGroup;
 			children = (
-				A62E37D7138D4ED100DAE057 /* 3dar_logo.png */,
-				A62E37D8138D4ED100DAE057 /* 3dar_marker_icon1.png */,
-				A62E37D9138D4ED100DAE057 /* 3dar_marker_icon1_focused.png */,
-				A62E37DA138D4ED100DAE057 /* 3dar_pano_bg.png */,
-				A62E37DB138D4ED100DAE057 /* bubble.png */,
+				A666A44014367EA500FBE29E /* 3dar_logo.png */,
+				A666A44114367EA500FBE29E /* 3dar_logo@2x.png */,
+				A666A44214367EA500FBE29E /* 3dar_marker_icon1.png */,
+				A666A44314367EA500FBE29E /* 3dar_marker_icon1_focused.png */,
+				A666A44414367EA500FBE29E /* 3dar_pano_bg.png */,
+				A666A44514367EA500FBE29E /* ar_icon_black_34x34.png */,
+				A666A44614367EA500FBE29E /* ar_icon_white_34x34.png */,
+				A666A44714367EA500FBE29E /* bubble.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
 		};
-		A62E37DC138D4ED100DAE057 /* models */ = {
+		A666A44814367EA500FBE29E /* models */ = {
 			isa = PBXGroup;
 			children = (
-				A62E37DD138D4ED100DAE057 /* cube.obj */,
-				A62E37DE138D4ED100DAE057 /* moebius.obj */,
-				A62E37DF138D4ED100DAE057 /* sphere.obj */,
-				A62E37E0138D4ED100DAE057 /* star.obj */,
-				A62E37E1138D4ED100DAE057 /* ufo.obj */,
+				A666A44914367EA500FBE29E /* cube.obj */,
+				A666A44A14367EA500FBE29E /* moebius.obj */,
+				A666A44B14367EA500FBE29E /* sphere.obj */,
+				A666A44C14367EA500FBE29E /* star.obj */,
+				A666A44D14367EA500FBE29E /* ufo.obj */,
 			);
 			path = models;
 			sourceTree = "<group>";
 		};
-		A62E37E2138D4ED100DAE057 /* Lib */ = {
+		A666A44E14367EA500FBE29E /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				A6AAD180138E26C700D66AA5 /* lib3DAR_v0_9_5.a */,
+				A666A44F14367EA500FBE29E /* lib3DAR_v2_1_2.a */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -321,18 +330,21 @@
 				4D59E6C41130B40F00AD04A7 /* Icon.png in Resources */,
 				4D8698C5117CD5E300828E44 /* MainWindow-iPad.xib in Resources */,
 				4DE046C91208CD0800011785 /* 3dar_pano_bg.jpg in Resources */,
-				A62E37E6138D4ED100DAE057 /* 3dar.plist in Resources */,
-				A62E37E7138D4ED100DAE057 /* 3dar_logo.png in Resources */,
-				A62E37E8138D4ED100DAE057 /* 3dar_marker_icon1.png in Resources */,
-				A62E37E9138D4ED100DAE057 /* 3dar_marker_icon1_focused.png in Resources */,
-				A62E37EB138D4ED100DAE057 /* bubble.png in Resources */,
-				A62E37EC138D4ED100DAE057 /* cube.obj in Resources */,
-				A62E37ED138D4ED100DAE057 /* moebius.obj in Resources */,
-				A62E37EE138D4ED100DAE057 /* sphere.obj in Resources */,
-				A62E37EF138D4ED100DAE057 /* star.obj in Resources */,
-				A62E37F0138D4ED100DAE057 /* ufo.obj in Resources */,
-				A62E37F2138D4ED100DAE057 /* SM3DAR_keys.txt in Resources */,
-				A6AAD138138E19F100D66AA5 /* 3dar_pano_bg.png in Resources */,
+				A666A45214367EA500FBE29E /* 3dar.plist in Resources */,
+				A666A45314367EA500FBE29E /* 3dar_logo.png in Resources */,
+				A666A45414367EA500FBE29E /* 3dar_logo@2x.png in Resources */,
+				A666A45514367EA500FBE29E /* 3dar_marker_icon1.png in Resources */,
+				A666A45614367EA500FBE29E /* 3dar_marker_icon1_focused.png in Resources */,
+				A666A45714367EA500FBE29E /* 3dar_pano_bg.png in Resources */,
+				A666A45814367EA500FBE29E /* ar_icon_black_34x34.png in Resources */,
+				A666A45914367EA500FBE29E /* ar_icon_white_34x34.png in Resources */,
+				A666A45A14367EA500FBE29E /* bubble.png in Resources */,
+				A666A45B14367EA500FBE29E /* cube.obj in Resources */,
+				A666A45C14367EA500FBE29E /* moebius.obj in Resources */,
+				A666A45D14367EA500FBE29E /* sphere.obj in Resources */,
+				A666A45E14367EA500FBE29E /* star.obj in Resources */,
+				A666A45F14367EA500FBE29E /* ufo.obj in Resources */,
+				A666A46114367EA500FBE29E /* SM3DAR_keys.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +384,7 @@
 					"\"$(SRCROOT)/3DAR/Lib\"",
 				);
 				OTHER_LDFLAGS = (
+					"-all_load",
 					"-lxml2",
 					"-lstdc++",
 				);
@@ -394,6 +407,7 @@
 					"\"$(SRCROOT)/3DAR/Lib\"",
 				);
 				OTHER_LDFLAGS = (
+					"-all_load",
 					"-lxml2",
 					"-lstdc++",
 				);
